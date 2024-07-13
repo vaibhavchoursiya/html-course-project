@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="author" content="Vaibhav Choursiya" />
+
+    <meta
+      name="description"
+      content="This page contains all the things I am Learning how to create as I learn HTML."
+    />
+
+    <!-- rel = Kya relation hai. href=> Hyper Text Reference -->
+    <link rel="icon" href="images/html_logo_300x300.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <title>My First Web Pages</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="Top">My Goals for the Year</h1>
+
+      <hr />
+
+      <nav aria-label="primary-navigation">
+        <ul>
+          <li><a href="#html-section">HTML Section</a></li>
+          <li><a href="#vacation">Vacation Section</a></li>
+          <li><a href="Faded_192(PaglaSongs).mp3" download>Faded</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article id="html-section">
+        <h2>I'm Ready to Learn HTML.</h2>
+
+        <p>This is my first web page.</p>
+        <section>
+          <h3>HTML</h3>
+          <figure>
+            <img
+              src="images/html_logo_300x300.png"
+              alt="HTML LOGO"
+              width="300"
+              height="300"
+            />
+            <figcaption>An Example on HTML5 code</figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h3>My Daily Schedule</h3>
+
+          <p>Let me tell you how</p>
+
+          <ol>
+            <li>...I Learn more about web dev.</li>
+            <li>...I play out my schedule.</li>
+            <li>
+              I use resource from
+              <abbr title="Mozilla Developer Network">
+                <!-- absoulate address -->
+                <a href="deveoper.mozilla.org">MDN</a> </abbr
+              >.
+            </li>
+          </ol>
+
+          <aside>
+            <details>
+              <summary>
+                Guess the <mark>number of hours</mark> I code per day
+              </summary>
+
+              <p>
+                I start at <time datetime="08:00">8 am</time> and I write code
+                for <time datetime="PT3H">3 hours</time> every morning.
+              </p>
+            </details>
+          </aside>
+
+          <br />
+          <table>
+            <caption>
+              My Daily Schedule
+            </caption>
+            <thead>
+              <tr>
+                <th>&nbsp;</th>
+                <th scope="col">Time</th>
+
+                <th scope="col">Work</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <th scope="row">Morning</th>
+                <td>
+                  <time datetime="08:00">8am</time>-<time datetime="11:00"
+                    >11am</time
+                  >
+                </td>
+                <td>write code</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Afternoon</th>
+                <td>
+                  <time datetime="12:00">12pm</time>-<time datetime="17:00"
+                    >5pm</time
+                  >
+                </td>
+                <td>Eat Lunch</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Evening</th>
+                <td rowspan="2">All Other Time</td>
+                <td>Free Time</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Night</th>
+                <td>Sleep</td>
+              </tr>
+            </tbody>
+
+            <tfoot>
+              <td colspan="3">
+                And that's what I do every day, 5 days a week. Just eat, sleep,
+                code ..and recharge!
+              </td>
+            </tfoot>
+          </table>
+        </section>
+      </article>
+      <hr />
+
+      <article id="vacation">
+        <h2>I Am Also Planning a Vacation</h2>
+
+        <p>This is my first web page.</p>
+        <p>
+          I live in <abbr title="Kansas">KS</abbr> so I want
+          <em>visit a beach</em>.
+        </p>
+
+        <section>
+          <h3>Place I'd like to Visit</h3>
+
+          <ul>
+            <li>
+              <p>I've heard good things about the Caribbean</p>
+              <figure>
+                <img
+                  src="images/caribbean.jpg"
+                  alt="caribbean Beach"
+                  title="I want to visit a Caribbean"
+                  width="400"
+                  height="225"
+                  loading="lazy"
+                />
+                <figcaption>Caribbean Beach Getaway</figcaption>
+              </figure>
+            </li>
+
+            <li>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+                eius. Repellat ullam fugiat tenetur, natus, excepturi autem ipsa
+                quibusdam animi esse nihil nobis?
+              </p>
+            </li>
+
+            <figure>
+              <img
+                src="images/vacation.jpg"
+                alt="Cancun Vacation"
+                title="It's 5 o'Clock Somewhere!"
+                loading="lazy"
+                width="400"
+                height="267"
+              />
+              <figcaption>A Caribbean Vacation Image</figcaption>
+            </figure>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Place I want to Avoid</h3>
+
+          <dl>
+            <dt>North Pole</dt>
+            <dd>I here this is <strong>cold!</strong></dd>
+
+            <dt>South pole</dt>
+            <dd>This is also <strong>cold!</strong></dd>
+
+            <dt>MOuntain Tops</dt>
+            <dd>These are also <strong>cold!</strong></dd>
+          </dl>
+        </section>
+      </article>
+      <hr />
+
+      <article id="contact">
+        <h2>Contact Me</h2>
+        <p>I really Like to Hear From Your.</p>
+
+        <!-- autofoucs : work on when page loads.(only one attribute)
+        autocomplete: suggest previous input values.(on or off)
+       -->
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+            <div>
+              <label for="firstName">First Name:</label>
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                placeholder="Jane"
+                autocomplete="on"
+                required
+                autofocus
+              />
+            </div>
+
+            <div>
+              <label for="lastName">Last Name:</label>
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                placeholder="Doe"
+                autocomplete="on"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="passowrd">Password:</label>
+              <input
+                type="password"
+                name="passowrd"
+                id="passowrd"
+                placeholder="Secret"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="phone">Phone:</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="123-456-7349"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="decade">Favorite Decade:</label>
+              <input
+                type="number"
+                name="decade"
+                id="decade"
+                min="1950"
+                max="2024"
+                step="10"
+              />
+            </div>
+
+            <div>
+              <label for="coffie">Favorite Coffie</label>
+
+              <select name="coffie" id="coffie">
+                <option value="regular coffie">Regular Coffie</option>
+                <option value="ice coffie">Ice Coffie</option>
+              </select>
+            </div>
+
+            <legend>Personal Info</legend>
+          </fieldset>
+
+          <br />
+          <fieldset>
+            <legend>What is your favorite food?</legend>
+            <div>
+              <input type="radio" name="food" id="tacos" value="tacos" />
+              <label for="tacos">Tacos</label>
+            </div>
+
+            <div>
+              <input type="radio" name="food" id="roti" value="roti" />
+              <label for="roti">Roti</label>
+            </div>
+
+            <div>
+              <input type="radio" name="food" id="pizza" value="pizza" />
+              <label for="pizza">Pizza</label>
+            </div>
+
+            <div>
+              <input type="radio" name="food" id="other" value="other" />
+              <label for="other">Other</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Do you have pets?</legend>
+
+            <div>
+              <input type="checkbox" name="pets" id="dog" value="dog" />
+              <label for="dog">Dog</label>
+            </div>
+
+            <div>
+              <input type="checkbox" name="pets" id="cat" value="cat" />
+              <label for="cat">Cat</label>
+            </div>
+
+            <div>
+              <input
+                type="checkbox"
+                name="pets"
+                id="otherpet"
+                value="otherpet"
+              />
+              <label for="otherpet">Other</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Send Me A Note</legend>
+            <label for="message">Your Message:</label>
+            <br />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Type Your Message Here!"
+            ></textarea>
+          </fieldset>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </form>
+      </article>
+    </main>
+
+    <hr />
+
+    <footer>
+      <ul>
+        <li><a href="#Top">Back to Top</a></li>
+        <li><a href="mailto:vaibhav.com">email</a></li>
+        <li><a href="tel:+1234567890">Dial</a></li>
+      </ul>
+
+      <!--! HTML entities -->
+
+      <p>
+        &lt; &lt; &lt; &copy; <a href="about.html">Vaibhav Choursiya</a>
+        &gt;&gt;&gt;
+      </p>
+    </footer>
+  </body>
+</html>
